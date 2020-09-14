@@ -1,0 +1,26 @@
+env:
+  browser: true
+  es2020: true
+  node: true
+extends:
+  - airbnb-base
+parser: '@typescript-eslint/parser'
+parserOptions:
+  ecmaVersion: 11
+  sourceType: module
+plugins:
+  - '@typescript-eslint'
+rules:
+  '@typescript-eslint/no-dupe-class-members':
+    - error
+  '@typescript-eslint/no-unused-vars':
+    - error
+  camelcase: off
+  max-len:
+    - error
+    - 120
+  no-dupe-class-members: off
+  no-param-reassign: off
+  no-restricted-globals: off
+  no-restricted-syntax: off
+  no-unused-vars: off
