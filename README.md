@@ -11,15 +11,25 @@ or
 npm i @almeidx/translate
 ```
 
+## Usage
+```ts
+translation(text: string, targetLang: string, sourceLang?: string)
+```
+
 ## Examples
 
 ```js
-const Translate = require('@almeidx/translate');
+import translate from '@almeidx/translate';
+// or
+const { translate } = require('@almeidx/translate');
 
-const translation = await Translate.translate({
-  text: 'Hello',
-  targetLang: 'es',
-});
+const translation = await translate('Hello', 'es');
 
 console.log(translation);
+// {
+//   translation: 'Hola',
+//   sourceLang: 'Hello',
+//   source: 'Hello',
+//   targetLang: 'es'
+// }
 ```

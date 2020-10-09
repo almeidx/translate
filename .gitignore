@@ -6,3 +6,7 @@ yarn-error.log
 
 # Build directories
 dist/
+
+# IDE Config directories
+.vscode/
+.idea/
