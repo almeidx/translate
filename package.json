@@ -1,6 +1,6 @@
 {
   "name": "@almeidx/translate",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Easily translate text into another language using Google Translate.",
   "repository": "https://github.com/almeidx/translate.git",
   "author": "almeidx <almeidx@pm.me> (https://almeidx.me)",
