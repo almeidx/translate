@@ -68,7 +68,7 @@ export const translate = async (
 
   return {
     translation: res.data.sentences[0].trans,
-    sourceLang: res.data.sentences[0].orig,
+    sourceLang: res.data.src,
     source: text,
     targetLang,
   };
