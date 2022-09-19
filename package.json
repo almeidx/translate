@@ -42,5 +42,8 @@
 	},
 	"homepage": "https://github.com/almeidx/translate#readme",
 	"license": "MIT",
+	"publishConfig": {
+		"access": "public"
+	},
 	"packageManager": "yarn@3.2.3"
 }
