@@ -1,0 +1,27 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"allowJs": true
+	},
+	"include": [
+		"**/*.ts",
+		"**/*.cts",
+		"**/*.mts",
+		"**/*.js",
+		"**/*.cjs",
+		"**/*.mjs",
+		"**/*.test.ts",
+		"**/*.test.cts",
+		"**/*.test.mts",
+		"**/*.test.js",
+		"**/*.test.cjs",
+		"**/*.test.mjs",
+		"**/*.spec.ts",
+		"**/*.spec.cts",
+		"**/*.spec.mts",
+		"**/*.spec.js",
+		"**/*.spec.cjs",
+		"**/*.spec.mjs"
+	],
+	"exclude": []
+}

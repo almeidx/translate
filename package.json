@@ -1,44 +1,49 @@
 {
-  "name": "@almeidx/translate",
-  "version": "2.2.2",
-  "description": "Easily translate text into another language using Google Translate.",
-  "repository": "https://github.com/almeidx/translate.git",
-  "author": "almeidx <almeidx@pm.me> (https://almeidx.me)",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "rimraf dist && tsc",
-    "lint": "eslint src --ext ts --fix",
-    "prepublish": "rimraf dist && tsc",
-    "test": "jest"
-  },
-  "dependencies": {
-    "axios": "^0.21.1"
-  },
-  "devDependencies": {
-    "@types/jest": "^26.0.14",
-    "@types/node": "^14.11.2",
-    "@typescript-eslint/eslint-plugin": "^3.10.1",
-    "@typescript-eslint/parser": "^3.10.1",
-    "eslint": "^7.4.0",
-    "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-plugin-import": "2.21.2",
-    "eslint-plugin-jest": "^24.0.2",
-    "jest": "^26.5.0",
-    "rimraf": "^3.0.2",
-    "ts-jest": "^26.4.1",
-    "typescript": "^4.0.3"
-  },
-  "keywords": [
-    "translation",
-    "translate",
-    "google translate",
-    "i18n",
-    "google"
-  ],
-  "bugs": {
-    "url": "https://github.com/almeidx/translate/issues"
-  },
-  "homepage": "https://github.com/almeidx/translate#readme",
-  "license": "MIT"
+	"name": "@almeidx/translate",
+	"version": "2.2.2",
+	"description": "Easily translate text into another language using Google Translate.",
+	"repository": "https://github.com/almeidx/translate.git",
+	"author": "almeidx <almeidx@pm.me> (https://almeidx.me)",
+	"main": "./dist/index.js",
+	"exports": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"files": [
+		"dist/*"
+	],
+	"scripts": {
+		"build": "rimraf dist && tsc",
+		"lint": "prettier --check . && eslint src --ext ts",
+		"format": "prettier --write . && eslint src --ext ts --fix",
+		"test": "vitest run",
+		"update": "yarn upgrade-interactive"
+	},
+	"dependencies": {
+		"node-fetch": "^2.6.7"
+	},
+	"devDependencies": {
+		"@types/node": "^16.11.59",
+		"@types/node-fetch": "^2.6.2",
+		"eslint": "^8.23.1",
+		"eslint-config-neon": "^0.1.33",
+		"prettier": "^2.7.1",
+		"rimraf": "^3.0.2",
+		"typescript": "^4.8.3",
+		"vitest": "^0.23.4"
+	},
+	"keywords": [
+		"translation",
+		"translate",
+		"google translate",
+		"i18n",
+		"google"
+	],
+	"bugs": {
+		"url": "https://github.com/almeidx/translate/issues"
+	},
+	"homepage": "https://github.com/almeidx/translate#readme",
+	"license": "MIT",
+	"publishConfig": {
+		"access": "public"
+	},
+	"packageManager": "yarn@3.2.3"
 }
