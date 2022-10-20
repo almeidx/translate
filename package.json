@@ -21,7 +21,7 @@
 		"node-fetch": "^2.6.7"
 	},
 	"devDependencies": {
-		"@types/node": "^16.11.59",
+		"@types/node": "^18.11.3",
 		"@types/node-fetch": "^2.6.2",
 		"eslint": "^8.23.1",
 		"eslint-config-neon": "^0.1.33",
