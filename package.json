@@ -18,7 +18,7 @@
 		"update": "yarn upgrade-interactive"
 	},
 	"dependencies": {
-		"node-fetch": "^2.6.7"
+		"node-fetch": "^3.2.10"
 	},
 	"devDependencies": {
 		"@types/node": "^16.11.59",
