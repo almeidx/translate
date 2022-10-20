@@ -9,7 +9,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@almeidx/translate@workspace:."
   dependencies:
-    "@types/node": ^16.11.59
+    "@types/node": ^17.0.45
     "@types/node-fetch": ^2.6.2
     eslint: ^8.23.1
     eslint-config-neon: ^0.1.33
@@ -505,10 +505,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^16.11.59":
-  version: 16.11.59
-  resolution: "@types/node@npm:16.11.59"
-  checksum: b3a2986ef8f8216bb7fd1187dcf2e69aca3e6b6b5fdfd6abf4cf11c44e3cdd587fae875a28dc4ef257e2b369e2c5290642aff6a0a9d702f3385a78f561293259
+"@types/node@npm:^17.0.45":
+  version: 17.0.45
+  resolution: "@types/node@npm:17.0.45"
+  checksum: aa04366b9103b7d6cfd6b2ef64182e0eaa7d4462c3f817618486ea0422984c51fc69fd0d436eae6c9e696ddfdbec9ccaa27a917f7c2e8c75c5d57827fe3d95e8
   languageName: node
   linkType: hard
 
