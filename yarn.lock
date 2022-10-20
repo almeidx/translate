@@ -16,7 +16,7 @@ __metadata:
     node-fetch: ^2.6.7
     prettier: ^2.7.1
     rimraf: ^3.0.2
-    typescript: ^4.8.3
+    typescript: ~4.8.4
     vitest: ^0.24.3
   languageName: unknown
   linkType: soft
@@ -4661,7 +4661,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.8.3":
+"typescript@npm:~4.8.4":
   version: 4.8.4
   resolution: "typescript@npm:4.8.4"
   bin:
@@ -4671,7 +4671,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.8.3#~builtin<compat/typescript>":
+"typescript@patch:typescript@~4.8.4#~builtin<compat/typescript>":
   version: 4.8.4
   resolution: "typescript@patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=a1c5e5"
   bin:
