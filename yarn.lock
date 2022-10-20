@@ -12,7 +12,7 @@ __metadata:
     "@types/node": ^16.11.59
     "@types/node-fetch": ^2.6.2
     eslint: ^8.23.1
-    eslint-config-neon: ^0.1.33
+    eslint-config-neon: ^0.1.39
     node-fetch: ^2.6.7
     prettier: ^2.7.1
     rimraf: ^3.0.2
@@ -1842,7 +1842,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-neon@npm:^0.1.33":
+"eslint-config-neon@npm:^0.1.39":
   version: 0.1.39
   resolution: "eslint-config-neon@npm:0.1.39"
   dependencies:
