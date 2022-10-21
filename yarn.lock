@@ -382,16 +382,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nodelib/fs.scandir@npm:2.1.4":
-  version: 2.1.4
-  resolution: "@nodelib/fs.scandir@npm:2.1.4"
-  dependencies:
-    "@nodelib/fs.stat": 2.0.4
-    run-parallel: ^1.1.9
-  checksum: 18c2150ab52a042bd65babe5b70106e6586dc036644131c33d253ff99e5eeef2e65858ab40161530a6f22b512a65e7c7629f0f1e0f35c00ee4c606f960d375ba
-  languageName: node
-  linkType: hard
-
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -402,31 +392,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nodelib/fs.stat@npm:2.0.4, @nodelib/fs.stat@npm:^2.0.2":
-  version: 2.0.4
-  resolution: "@nodelib/fs.stat@npm:2.0.4"
-  checksum: d0d9745f878816d041a8b36faf5797d88ba961274178f0ad1f7fe0efef8118ca9bd0e43e4d0d85a9af911bd35122ec1580e626a83d7595fc4d60f2c1c70e2665
-  languageName: node
-  linkType: hard
-
-"@nodelib/fs.stat@npm:2.0.5":
+"@nodelib/fs.stat@npm:2.0.5, @nodelib/fs.stat@npm:^2.0.2":
   version: 2.0.5
   resolution: "@nodelib/fs.stat@npm:2.0.5"
   checksum: 012480b5ca9d97bff9261571dbbec7bbc6033f69cc92908bc1ecfad0792361a5a1994bc48674b9ef76419d056a03efadfce5a6cf6dbc0a36559571a7a483f6f0
   languageName: node
   linkType: hard
 
-"@nodelib/fs.walk@npm:^1.2.3":
-  version: 1.2.6
-  resolution: "@nodelib/fs.walk@npm:1.2.6"
-  dependencies:
-    "@nodelib/fs.scandir": 2.1.4
-    fastq: ^1.6.0
-  checksum: d156901823b3d3de368ad68047a964523e0ce5f796c0aa7712443b1f748d8e7fc24ce2c0f18d22a177e1f1c6092bca609ab5e4cb1792c41cdc8a6989bc391139
-  languageName: node
-  linkType: hard
-
-"@nodelib/fs.walk@npm:^1.2.8":
+"@nodelib/fs.walk@npm:^1.2.3, @nodelib/fs.walk@npm:^1.2.8":
   version: 1.2.8
   resolution: "@nodelib/fs.walk@npm:1.2.8"
   dependencies:
