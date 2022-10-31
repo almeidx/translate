@@ -2,18 +2,30 @@
 	"name": "@almeidx/translate",
 	"version": "2.3.0",
 	"description": "Easily translate text into another language using Google Translate.",
+	"keywords": [
+		"translation",
+		"translate",
+		"google translate",
+		"i18n",
+		"google"
+	],
+	"homepage": "https://github.com/almeidx/translate#readme",
+	"bugs": {
+		"url": "https://github.com/almeidx/translate/issues"
+	},
 	"repository": "https://github.com/almeidx/translate.git",
+	"license": "MIT",
 	"author": "almeidx <almeidx@pm.me> (https://almeidx.me)",
-	"main": "./dist/index.js",
 	"exports": "./dist/index.js",
+	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"files": [
 		"dist/*"
 	],
 	"scripts": {
 		"build": "rimraf dist && tsc",
-		"lint": "prettier --check . && eslint src --ext ts",
 		"format": "prettier --write . && eslint src --ext ts --fix",
+		"lint": "prettier --check . && eslint src --ext ts",
 		"test": "vitest run",
 		"update": "yarn upgrade-interactive"
 	},
@@ -30,20 +42,8 @@
 		"typescript": "~4.8.4",
 		"vitest": "^0.24.3"
 	},
-	"keywords": [
-		"translation",
-		"translate",
-		"google translate",
-		"i18n",
-		"google"
-	],
-	"bugs": {
-		"url": "https://github.com/almeidx/translate/issues"
-	},
-	"homepage": "https://github.com/almeidx/translate#readme",
-	"license": "MIT",
+	"packageManager": "yarn@3.2.4",
 	"publishConfig": {
 		"access": "public"
-	},
-	"packageManager": "yarn@3.2.4"
+	}
 }
