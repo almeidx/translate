@@ -17,7 +17,7 @@ __metadata:
     prettier: ^2.8.0
     rimraf: ^3.0.2
     typescript: ~4.9.3
-    vitest: ^0.25.4
+    vitest: ^0.25.5
   languageName: unknown
   linkType: soft
 
@@ -3744,7 +3744,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vitest@npm:^0.25.4":
+"vitest@npm:^0.25.5":
   version: 0.25.5
   resolution: "vitest@npm:0.25.5"
   dependencies:
