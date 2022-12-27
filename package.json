@@ -58,7 +58,7 @@
 		"prettier": "^2.8.1",
 		"rimraf": "^3.0.2",
 		"typescript": "~4.9.4",
-		"vitest": "^0.26.0"
+		"vitest": "^0.26.2"
 	},
 	"packageManager": "yarn@3.3.0",
 	"publishConfig": {
