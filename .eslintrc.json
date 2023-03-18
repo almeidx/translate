@@ -4,5 +4,8 @@
 	"ignorePatterns": ["**/dist/*", "**/node_modules/*", ".yarn/*"],
 	"parserOptions": {
 		"project": "./tsconfig.eslint.json"
+	},
+	"rules": {
+		"@typescript-eslint/consistent-type-definitions": [2, "interface"]
 	}
 }

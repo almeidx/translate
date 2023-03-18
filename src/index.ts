@@ -43,7 +43,14 @@ export async function translate(text: string, targetLang: string, sourceLang = "
 
 export default translate;
 
-type GoogleResponse = {
+export interface Translation {
+	source: string;
+	sourceLang: string;
+	targetLang: string;
+	translation: string;
+}
+
+interface GoogleResponse {
 	confidence: number;
 	dict: {
 		base_form: string;
@@ -69,11 +76,4 @@ type GoogleResponse = {
 	}[];
 	src: string;
 	/* eslint-enable camelcase */
-};
-
-export type Translation = {
-	source: string;
-	sourceLang: string;
-	targetLang: string;
-	translation: string;
-};
+}
