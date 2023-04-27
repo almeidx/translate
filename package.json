@@ -54,7 +54,7 @@
 		"node-fetch": "^2.6.9"
 	},
 	"devDependencies": {
-		"@types/node": "^18.16.1",
+		"@types/node": "^18.16.2",
 		"@types/node-fetch": "^2.6.2",
 		"esbuild": "^0.17.18",
 		"eslint": "^8.39.0",
