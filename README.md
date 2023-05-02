@@ -2,6 +2,8 @@
 
 Use this package to easily translate text into another language using Google Translate.
 
+This uses the global `fetch()`, which is available in Node.js v18.0.0 (without an experimental flag) or later.
+
 ## Install
 
 ```sh-session

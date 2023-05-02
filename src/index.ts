@@ -1,5 +1,8 @@
 import { URLSearchParams } from "node:url";
-import fetch from "node-fetch";
+import type { fetch as undiciFetch } from "undici";
+
+// @types/node does not have the global fetch() type
+declare const fetch: typeof undiciFetch;
 
 /**
  * Translates text from one language to another, using Google Translate
