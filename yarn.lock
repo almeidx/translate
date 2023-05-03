@@ -13,7 +13,7 @@ __metadata:
     "@types/node-fetch": ^2.6.3
     esbuild: ^0.17.18
     eslint: ^8.39.0
-    eslint-config-neon: ^0.1.45
+    eslint-config-neon: ^0.1.46
     prettier: ^2.8.8
     rimraf: ^5.0.0
     typescript: ~5.0.4
@@ -1570,9 +1570,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-neon@npm:^0.1.45":
-  version: 0.1.45
-  resolution: "eslint-config-neon@npm:0.1.45"
+"eslint-config-neon@npm:^0.1.46":
+  version: 0.1.46
+  resolution: "eslint-config-neon@npm:0.1.46"
   dependencies:
     "@angular-eslint/eslint-plugin": ^15.2.1
     "@angular-eslint/eslint-plugin-template": ^15.2.1
@@ -1605,7 +1605,7 @@ __metadata:
     eslint-plugin-unicorn: ^46.0.0
     eslint-plugin-vue: ^9.11.0
     vue-eslint-parser: ^9.1.1
-  checksum: f3f4dc6e78ffc3e319ce17ab8669211dc70eec2c7f705cefa2a816f2c32fc80eef643bdba4cfacb8430f6ac4610ca6ea72a5a2ee7ffb814bcf76f9f8fb7cc057
+  checksum: 4cd59c1d31217ac428d470e1588ad4279157105542b41baab1febe82eded10fe918a451035519ce3feb9c531b0b63f8afc68dfdc565c0b55a20d14cb501f0140
   languageName: node
   linkType: hard
 
