@@ -15,7 +15,7 @@
 	},
 	"repository": "https://github.com/almeidx/translate.git",
 	"license": "MIT",
-	"author": "almeidx <almeidx@pm.me> (https://almeidx.me)",
+	"author": "almeidx <almeidx@pm.me> (https://almeidx.dev)",
 	"exports": "./dist/index.js",
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
