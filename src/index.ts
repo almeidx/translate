@@ -21,18 +21,34 @@ export async function translate(text: string, targetLang: string, sourceLang = "
 	form.append("tl", targetLang);
 	form.append("q", text);
 
-	const url =
-		"https://translate.google.com/translate_a/single" +
-		`?client=at&dt=t&dt=ld&dt=qca&dt=rm&dt=bd&dj=1&hl=${targetLang}&ie=UTF-8` +
-		"&oe=UTF-8&inputm=2&otf=2&iid=1dd3b944-fa62-4b55-b330-74909a99969e";
+	const searchParams = new URLSearchParams({
+		client: "at",
+		dj: "1",
+		hl: targetLang,
+		ie: "UTF-8",
+		oe: "UTF-8",
+		inputm: "2",
+		otf: "2",
+		iid: "1dd3b944-fa62-4b55-b330-74909a99969e",
+	});
 
-	const response = await fetch(url, {
+	// These have to be set separately because the URLSearchParams constructor doesn't work with duplicate keys properly
+	const dtValues = ["t", "ld", "qca", "rm", "bd"];
+	for (const value of dtValues) searchParams.append("dt", value);
+
+	const response = await fetch(`https://translate.google.com/translate_a/single?${searchParams.toString()}`, {
 		body: form,
-		headers: {
-			"Content-Type": "application/x-www-form-urlencoded",
-		},
+		headers: { "Content-Type": "application/x-www-form-urlencoded" },
 		method: "POST",
 	});
+
+	if (!response.ok) {
+		if (response.status === 429) {
+			throw new Error("You are being rate-limited by Google Translate");
+		}
+
+		throw new Error(`An error occurred while translating: ${response.statusText}`);
+	}
 
 	const data = (await response.json()) as GoogleResponse;
 

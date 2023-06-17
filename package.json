@@ -31,6 +31,34 @@
 		"lint": "prettier --check . && eslint src --ext ts",
 		"test": "vitest run"
 	},
+	"prettier": {
+		"printWidth": 120,
+		"trailingComma": "all",
+		"useTabs": true
+	},
+	"eslintConfig": {
+		"parserOptions": {
+			"project": "./tsconfig.eslint.json"
+		},
+		"extends": [
+			"neon/common",
+			"neon/node",
+			"neon/typescript",
+			"neon/prettier"
+		],
+		"rules": {
+			"@typescript-eslint/consistent-type-definitions": [
+				2,
+				"interface"
+			],
+			"unicorn/text-encoding-identifier-case": 0
+		},
+		"ignorePatterns": [
+			"dist/*",
+			"node_modules/*"
+		],
+		"root": true
+	},
 	"resolutions": {
 		"@angular-eslint/eslint-plugin": "npm:@almeidx/empty@1.0.1",
 		"@angular-eslint/eslint-plugin-template": "npm:@almeidx/empty@1.0.1",
@@ -67,32 +95,5 @@
 	},
 	"publishConfig": {
 		"access": "public"
-	},
-	"eslintConfig": {
-		"root": true,
-		"extends": [
-			"neon/common",
-			"neon/node",
-			"neon/typescript",
-			"neon/prettier"
-		],
-		"ignorePatterns": [
-			"dist/*",
-			"node_modules/*"
-		],
-		"parserOptions": {
-			"project": "./tsconfig.eslint.json"
-		},
-		"rules": {
-			"@typescript-eslint/consistent-type-definitions": [
-				2,
-				"interface"
-			]
-		}
-	},
-	"prettier": {
-		"printWidth": 120,
-		"useTabs": true,
-		"trailingComma": "all"
 	}
 }
