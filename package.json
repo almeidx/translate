@@ -23,14 +23,13 @@
 		"dist"
 	],
 	"scripts": {
-		"build": "rimraf dist && yarn build:check && yarn build:write",
+		"build": "rimraf dist && pnpm build:check && pnpm build:write",
 		"build:check": "tsc --emitDeclarationOnly",
 		"build:write": "esbuild src/*.ts --outdir=dist --platform=node --target=node16 --format=cjs --sourcemap --minify",
-		"fmt": "yarn format",
+		"fmt": "pnpm format",
 		"format": "prettier --write . && eslint src --ext ts --fix",
 		"lint": "prettier --check . && eslint src --ext ts",
-		"test": "vitest run",
-		"update": "yarn upgrade-interactive"
+		"test": "vitest run"
 	},
 	"resolutions": {
 		"@angular-eslint/eslint-plugin": "npm:@almeidx/empty@1.0.1",
@@ -62,11 +61,38 @@
 		"undici": "^5.22.1",
 		"vitest": "^0.32.2"
 	},
-	"packageManager": "yarn@3.3.0",
+	"packageManager": "pnpm@8.6.0",
 	"engines": {
 		"node": ">=18.0.0"
 	},
 	"publishConfig": {
 		"access": "public"
+	},
+	"eslintConfig": {
+		"root": true,
+		"extends": [
+			"neon/common",
+			"neon/node",
+			"neon/typescript",
+			"neon/prettier"
+		],
+		"ignorePatterns": [
+			"dist/*",
+			"node_modules/*"
+		],
+		"parserOptions": {
+			"project": "./tsconfig.eslint.json"
+		},
+		"rules": {
+			"@typescript-eslint/consistent-type-definitions": [
+				2,
+				"interface"
+			]
+		}
+	},
+	"prettier": {
+		"printWidth": 120,
+		"useTabs": true,
+		"trailingComma": "all"
 	}
 }

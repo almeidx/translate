@@ -7,27 +7,24 @@ jobs:
     name: Tests
     runs-on: ubuntu-latest
 
-    env:
-      TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
-      TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
-
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup Node
-        uses: actions/setup-node@v3
+      - uses: pnpm/action-setup@v2
+
+      - uses: actions/setup-node@v3
         with:
-          cache: yarn
+          cache: pnpm
           node-version: 18
 
       - name: Install dependencies
-        run: yarn --immutable
+        run: pnpm i --frozen-lockfile
 
       - name: Lint
-        run: yarn lint
+        run: pnpm lint
 
       - name: Build
-        run: yarn build
+        run: pnpm build
 
       - name: Test
-        run: yarn test
+        run: pnpm test

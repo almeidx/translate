@@ -6,14 +6,12 @@ This uses the global `fetch()`, which is available in Node.js v18.0.0 (without a
 
 ## Install
 
-```sh-session
-yarn add @almeidx/translate
-```
-
-or
+Pick one of the following, depending on your package manager preference:
 
 ```sh-session
 npm i @almeidx/translate
+pnpm add @almeidx/translate
+yarn add @almeidx/translate
 ```
 
 ## Usage

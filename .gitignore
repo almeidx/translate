@@ -1,20 +1,2 @@
-# Packages
-node_modules/
-
-# Log files
-yarn-error.log
-
-# Build directories
 dist/
-
-# IDE Config directories
-.vscode/
-.idea/
-
-.yarn/*
-!.yarn/cache
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
+node_modules/
